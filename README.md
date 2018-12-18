@@ -33,4 +33,4 @@ Now any missing jar will hopefully throw a `ClassDefNotFoundException`.
 Caveat
 --- 
 `ExecutorService` as well as java lambdas may not always bubble up the `ClassDefNotFoundException`
-This means that the integration test may not always fail
+This means that the integration test may not always fail.

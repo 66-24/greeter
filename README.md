@@ -1,9 +1,9 @@
-# Shading and reduced-dependency-pom.xml
+# Shading and dependency-reduced-pom.xml
 
 By default the shade plugin replaces the artifact being built with the shaded jar.
-It also creates a reduced-dependency-pom.xml and installs it with the shaded jar.
+It also creates a dependency-reduced-pom.xml and installs it with the shaded jar.
 
-The dependency pom has no dependency references to the dependencies packed into the shaded fat jar.
+The `dependency-reduced-pom.xml` has no references to any of the dependencies packed into the shaded fat jar.
 This way any client of the fat-jar will not need to pull in additional libraries as all
 the required classes are already included in the fat-jar.
 
